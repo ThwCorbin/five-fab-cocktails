@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 import "./App.css";
-import Tabs from "./Tabs.js";
+import Header from "./Header";
+import Tab from "./Tab.js";
+import "./Tab.css";
+import Content from "./Content";
 
 let url = " https://www.thecocktaildb.com/api/json/v1/1/random.php";
+
+// let cocktails = [];
 
 class App extends Component {
 	constructor() {
@@ -11,10 +16,22 @@ class App extends Component {
 			cocktails: [],
 		};
 	} //constructor
+
 	render() {
+		let allTabs = this.state.cocktails.map((cocktail, idx) => {
+			return <Tab cocktailName={cocktail.name} key={idx} />;
+		});
+
+		let allContents = this.state.cocktails.map((cocktail, idx) => {
+			return <Content cocktail={cocktail} key={idx} />;
+		});
+
 		return (
 			<div className="App">
-				<Tabs cNames={this.state.cocktails[0].name} />
+				<Header />
+				<ul className="tabs">{allTabs}</ul>
+				<div className="contents">{allContents}</div>
+				{/* <Content cocktails={this.state.cocktails} /> */}
 			</div>
 		);
 	} //render
@@ -37,7 +54,7 @@ class App extends Component {
 						name: obj.drinks[0].strDrink,
 						instructions: obj.drinks[0].strInstructions,
 						image: obj.drinks[0].strDrinkThumb,
-						spirt: {
+						spirits: {
 							spirit1: obj.drinks[0].strIngredient1,
 							spirit2: obj.drinks[0].strIngredient2,
 							spirit3: obj.drinks[0].strIngredient3,
@@ -49,7 +66,7 @@ class App extends Component {
 							spirit9: obj.drinks[0].strIngredient9,
 							spirit10: obj.drinks[0].strIngredient10,
 						},
-						measure: {
+						measures: {
 							measure1: obj.drinks[0].strMeasure1,
 							measure2: obj.drinks[0].strMeasure2,
 							measure3: obj.drinks[0].strMeasure3,
@@ -64,7 +81,6 @@ class App extends Component {
 					};
 					objArr.push(cocktail);
 				});
-				console.log(objArr);
 				this.setState({
 					cocktails: objArr,
 				}); //setState
