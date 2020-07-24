@@ -1,16 +1,24 @@
 .tabs {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	width: 50em;
 	min-height: 2em;
 	list-style: none;
 	font-size: 0.75em;
-	background-color: red;
 	margin: 1em 0;
 }
 
-.c-name {
-	/* width: 18vw; */
-	/* text-align: center; */
+.cocktail-name-li {
+	width: 100%;
+	text-align: center;
+	background-color: var(--algonquin);
 	padding: 1em;
+	border: 1px solid var(--aperol);
+	border-right: 0.5px solid var(--indigo);
+}
+
+.active {
+	background-color: var(--aperol);
+	border: 2px solid var(--indigo);
+	border-right: 0.5px solid var(--aperol);
 }

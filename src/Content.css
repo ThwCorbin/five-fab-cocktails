@@ -13,6 +13,13 @@
 .content {
 }
 
+ingredients {
+	/* margin: 1em 0; */
+}
+
+ingredient {
+}
+
 img {
 	width: 15em;
 	padding: 1em;
