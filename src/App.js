@@ -10,11 +10,11 @@ let url = " https://www.thecocktaildb.com/api/json/v1/1/random.php";
 // let cocktails = [];
 
 class App extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			cocktails: [],
-			activeTab: 0,
+			activeTabIdx: 0,
 		};
 	} //constructor
 
@@ -77,24 +77,45 @@ class App extends Component {
 				this.setState({
 					cocktails: objArr,
 				}); //setState
-				console.log(objArr);
 			});
 	}; //getCocktails
 
+	updateCocktail = () => {
+		// console.log(`The active cocktail idx ${this.state.activeTabIdx}`);
+		const idx = this.state.activeTabIdx;
+	};
+
 	handleTabClick = (e) => {
-		console.log(`${e.target.textContent} is the clicked tab`);
+		//* Get the clicked tab's parent's childNodes
 		let childArray = Array.from(e.target.parentElement.childNodes);
-		let clickedTabIdx = childArray.forEach((child, idx) => {
-			console.log(`The forEach child is ${child.textContent}`, idx);
-			console.log(`The clicked tab is ${e.target.textContent}`);
-			if (child.textContent.includes(e.target.textContent)) return idx;
+		let clickedTabIdx;
+
+		//* Get the index of the clicked tab
+		childArray.forEach((child, idx) => {
+			if (child.textContent === e.target.textContent)
+				return (clickedTabIdx = idx);
 		});
-		console.log(`The index of the clicked tab is ${clickedTabIdx}`);
+
+		//* Set the state with the index
+		this.setState(
+			{
+				activeTabIdx: clickedTabIdx,
+			},
+			() => {
+				this.updateCocktail();
+			}
+		);
+		//* "The second parameter to setState() is an optional callback function
+		//* that will be executed once setState is completed
+		//* and the component is re-rendered."
+		// https://reactjs.org/docs/react-component.html#setstate
+
+		// console.log(`The index of the clicked tab is ${clickedTabIdx}`);
 	};
 
 	render() {
 		let allTabs = this.state.cocktails.map((cocktail, idx) => {
-			if (idx === this.state.activeTab) {
+			if (idx === this.state.activeTabIdx) {
 				return (
 					<Tab
 						cocktailName={cocktail.name}
@@ -134,6 +155,13 @@ class App extends Component {
 	componentDidMount() {
 		this.getCocktails();
 	} //componentDidMount
+
+	// componentDidUpdate(prevProps) {
+	// // 	//* "setState() must be wrapped in a condition" to prevent an infinite loop
+	// 	if(this.props[some property key] !== prevProps[some property key] ) {
+	// 		this.updateCocktail();
+	// 	}
+	// } //componentWillMount
 } //App
 
 export default App;
