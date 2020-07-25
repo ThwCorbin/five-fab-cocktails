@@ -45,13 +45,3 @@ body {
 	align-items: center;
 	width: 100%;
 }
-
-/** Header ********************* */
-.h1-title {
-	color: var(--martinez);
-	margin-top: 1em;
-}
-
-.h2-subtitle {
-	color: var(--sour);
-}
