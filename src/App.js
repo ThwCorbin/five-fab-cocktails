@@ -137,7 +137,7 @@ class App extends Component {
 		});
 
 		let allContents = this.state.cocktails.map((cocktail, idx) => {
-			if (idx === this.state.activeTab) {
+			if (idx === this.state.activeTabIdx) {
 				return <Content cocktail={cocktail} key={idx} />;
 			}
 		});

@@ -37,7 +37,7 @@ class Content extends Component {
 		});
 
 		const ingredients = ingredientArr.map((ingredient, idx) => {
-			if (!ingredient.includes("null ")) {
+			if (!ingredient.includes("null ") || !ingredient.includes("")) {
 				return <Ingredient ingredient={ingredient} key={idx} />;
 			}
 		}); //ingredients
