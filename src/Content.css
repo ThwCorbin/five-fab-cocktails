@@ -1,26 +1,76 @@
-/* width: 50em */
-.contents {
-	/* display: flex; */
-	/* justify-content: space-between; */
-	/* width: 50em; */
-	/* min-height: 2em; */
-	/* list-style: none; */
-	/* font-size: 0.75em; */
-	/* background-color: red; */
-	/* margin: 1em 0; */
+.div-contents {
+	width: 47rem;
+	height: 30rem;
+	background-color: var(--white-russian);
+	border: solid 2px var(--sour);
+	border-top: none;
 }
 
-.content {
+.div-cocktail {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 
-ingredients {
-	/* margin: 1em 0; */
+.div-image-name-ingredients {
+	display: flex;
+	width: 100%;
 }
 
-ingredient {
+.div-img {
+	background-color: var(--dry-martini);
+	border: solid 1px var(--silver);
+	margin: 1rem;
 }
 
-img {
+.div-img > img {
 	width: 15em;
 	padding: 1em;
 }
+
+.div-name-ingredients {
+	margin: 1rem 2rem;
+}
+
+.h3-name {
+	color: var(--old-pal);
+}
+
+.ul-ingredients {
+	/* align-items: center; */
+	margin: 1rem;
+}
+
+.li-ingredient {
+	list-style: none;
+	line-height: 1.5;
+}
+
+.div-instructions {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
+
+.p-instructions {
+	width: 50%;
+	line-height: 1.25;
+}
+
+/* --white-russian: #f0e0c7;
+	--aperol: #f6270f;
+	--old-pal: #992b1e;
+	--manhattan: #b01500;
+	--brooklyn: #783f32;
+	--porto-flip: #722722;
+	--old-fashioned: #df5a0b;
+	--algonquin: #d18613;
+	--martinez: #ed9337;
+	--hemingway-special: #ffbf73;
+	--sour: #bbb15c;
+	--whiskey-sour: #c09657;
+	--margarita: #d8b891;
+	--dry-martini: #e6f4f7;
+	--the-last-word: #9cbc79;
+	--aquamarine: #d0e3b3;
+	--blue-501: #529ec6; */

@@ -2,21 +2,26 @@
 :root {
 	--white: #ffffff;
 	--white_off: #f0f8ff;
+	--white-russian: #f0e0c7;
 	--aperol: #f6270f;
+	--old-pal: #992b1e;
+	--manhattan: #b01500;
+	--brooklyn: #783f32;
+	--porto-flip: #722722;
+	--old-fashioned: #df5a0b;
 	--algonquin: #d18613;
+	--martinez: #ed9337;
+	--hemingway-special: #ffbf73;
+	--sour: #bbb15c;
+	--whiskey-sour: #c09657;
+	--margarita: #d8b891;
+	--dry-martini: #e6f4f7;
+	--the-last-word: #9cbc79;
+	--aquamarine: #d0e3b3;
+	--blue-501: #529ec6;
 	--silver: silver;
 	--gray: #788ea1;
 	--black: #000000;
-	--brown: #d06f40;
-	--carmel: #c76331;
-	--red: red;
-	--orange: orange;
-	--yellow: yellow;
-	--green: green;
-	--blue: blue;
-	--indigo: indigo;
-	--violet: violet;
-	--highlight: silver;
 }
 
 /** Reset ###############  */
@@ -26,7 +31,7 @@
 	margin: 0;
 }
 
-/** Body & Container */
+/** Body ********************* */
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -38,4 +43,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
+}
+
+/** Header ********************* */
+.h1-title {
+	color: var(--martinez);
+	margin-top: 1em;
+}
+
+.h2-subtitle {
+	color: var(--sour);
 }

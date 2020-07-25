@@ -1,24 +1,44 @@
-.tabs {
+.ul-tabs {
 	display: flex;
 	justify-content: space-evenly;
-	width: 50em;
+	width: 47rem;
 	min-height: 2em;
 	list-style: none;
 	font-size: 0.75em;
-	margin: 1em 0;
+	margin: 1rem 0 0;
 }
 
-.cocktail-name-li {
+.li-cocktail-name {
 	width: 100%;
 	text-align: center;
+	color: var(--porto-flip);
 	background-color: var(--algonquin);
+	font-weight: bold;
 	padding: 1em;
-	border: 1px solid var(--aperol);
-	border-right: 0.5px solid var(--indigo);
+	border: 1px solid var(--dry-martini);
 }
 
 .active {
-	background-color: var(--aperol);
-	border: 2px solid var(--indigo);
-	border-right: 0.5px solid var(--aperol);
+	color: var(--martinez);
+	background-color: var(--manhattan);
+	border: 2px solid var(--sour);
+	border-bottom: var(--white-russian);
 }
+
+/* --white-russian: #f0e0c7;
+	--aperol: #f6270f;
+	--old-pal: #992b1e;
+	--manhattan: #b01500;
+	--brooklyn: #783f32;
+	--porto-flip: #722722;
+	--old-fashioned: #df5a0b;
+	--algonquin: #d18613;
+	--martinez: #ed9337;
+	--hemingway-special: #ffbf73;
+	--sour: #bbb15c;
+	--whiskey-sour: #c09657;
+	--margarita: #d8b891;
+	--dry-martini: #e6f4f7;
+	--the-last-word: #9cbc79;
+	--aquamarine: #d0e3b3;
+	--blue-501: #529ec6; */

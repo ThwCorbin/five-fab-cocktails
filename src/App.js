@@ -80,10 +80,10 @@ class App extends Component {
 			});
 	}; //getCocktails
 
-	updateCocktail = () => {
-		// console.log(`The active cocktail idx ${this.state.activeTabIdx}`);
-		const idx = this.state.activeTabIdx;
-	};
+	// updateCocktail = () => {
+	// 	// console.log(`The active cocktail idx ${this.state.activeTabIdx}`);
+	// 	const idx = this.state.activeTabIdx;
+	// };
 
 	handleTabClick = (e) => {
 		//* Get the clicked tab's parent's childNodes
@@ -100,10 +100,11 @@ class App extends Component {
 		this.setState(
 			{
 				activeTabIdx: clickedTabIdx,
-			},
-			() => {
-				this.updateCocktail();
 			}
+			// ,
+			// () => {
+			// 	this.updateCocktail();
+			// }
 		);
 		//* "The second parameter to setState() is an optional callback function
 		//* that will be executed once setState is completed
@@ -120,7 +121,7 @@ class App extends Component {
 					<Tab
 						cocktailName={cocktail.name}
 						tabCallback={this.handleTabClick}
-						className="cocktail-name-li active"
+						className="li-cocktail-name active"
 						key={idx}
 					/>
 				);
@@ -129,7 +130,7 @@ class App extends Component {
 					<Tab
 						cocktailName={cocktail.name}
 						tabCallback={this.handleTabClick}
-						className="cocktail-name-li"
+						className="li-cocktail-name"
 						key={idx}
 					/>
 				);
@@ -145,9 +146,8 @@ class App extends Component {
 		return (
 			<div className="App">
 				<Header />
-				<ul className="tabs">{allTabs}</ul>
-				<div className="contents">{allContents}</div>
-				{/* <Content cocktails={this.state.cocktails} /> */}
+				<ul className="ul-tabs">{allTabs}</ul>
+				<div className="div-contents">{allContents}</div>
 			</div>
 		);
 	} //render
@@ -155,13 +155,6 @@ class App extends Component {
 	componentDidMount() {
 		this.getCocktails();
 	} //componentDidMount
-
-	// componentDidUpdate(prevProps) {
-	// // 	//* "setState() must be wrapped in a condition" to prevent an infinite loop
-	// 	if(this.props[some property key] !== prevProps[some property key] ) {
-	// 		this.updateCocktail();
-	// 	}
-	// } //componentWillMount
 } //App
 
 export default App;

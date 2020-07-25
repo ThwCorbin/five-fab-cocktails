@@ -4,8 +4,8 @@ import "./Header.css";
 function Header() {
 	return (
 		<header>
-			<h1>Five Fab Cocktails</h1>
-			<h3>Imbibe | Enjoy | Repeat</h3>
+			<h1 className="h1-title">Five Fab Cocktails</h1>
+			<h2 className="h2-subtitle">Imbibe | Enjoy | Repeat</h2>
 		</header>
 	);
 } //Header
