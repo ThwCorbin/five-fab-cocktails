@@ -1,6 +1,6 @@
 .div-contents {
 	width: 47rem;
-	height: 30rem;
+	height: 35rem;
 	background-color: var(--white-russian);
 	border: solid 2px var(--sour);
 	border-top: none;
@@ -53,24 +53,6 @@
 }
 
 .p-instructions {
-	width: 50%;
+	width: 65%;
 	line-height: 1.25;
 }
-
-/* --white-russian: #f0e0c7;
-	--aperol: #f6270f;
-	--old-pal: #992b1e;
-	--manhattan: #b01500;
-	--brooklyn: #783f32;
-	--porto-flip: #722722;
-	--old-fashioned: #df5a0b;
-	--algonquin: #d18613;
-	--martinez: #ed9337;
-	--hemingway-special: #ffbf73;
-	--sour: #bbb15c;
-	--whiskey-sour: #c09657;
-	--margarita: #d8b891;
-	--dry-martini: #e6f4f7;
-	--the-last-word: #9cbc79;
-	--aquamarine: #d0e3b3;
-	--blue-501: #529ec6; */

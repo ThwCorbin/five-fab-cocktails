@@ -1,0 +1,5 @@
+h2 > svg {
+	fill: var(--old-fashioned);
+	width: 0.75em;
+	height: auto;
+}

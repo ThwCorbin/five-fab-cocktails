@@ -4,10 +4,9 @@ import Header from "./Header";
 import Tab from "./Tab.js";
 import "./Tab.css";
 import Content from "./Content";
+import Button from "./Button";
 
 let url = " https://www.thecocktaildb.com/api/json/v1/1/random.php";
-
-// let cocktails = [];
 
 class App extends Component {
 	constructor(props) {
@@ -80,10 +79,18 @@ class App extends Component {
 			});
 	}; //getCocktails
 
-	// updateCocktail = () => {
-	// 	// console.log(`The active cocktail idx ${this.state.activeTabIdx}`);
-	// 	const idx = this.state.activeTabIdx;
-	// };
+	handleBtnClick = () => {
+		//* This does not reset the index at 0 for the five new drinks
+		this.getCocktails();
+
+		//* Below does reset the index, but the new image loads perceptibly late
+		// this.setState(
+		// 	{
+		// 		activeTabIdx: 0,
+		// 	},
+		// 	() => this.getCocktails()
+		// ); //setState
+	};
 
 	handleTabClick = (e) => {
 		//* Get the clicked tab's parent's childNodes
@@ -97,22 +104,10 @@ class App extends Component {
 		});
 
 		//* Set the state with the index
-		this.setState(
-			{
-				activeTabIdx: clickedTabIdx,
-			}
-			// ,
-			// () => {
-			// 	this.updateCocktail();
-			// }
-		);
-		//* "The second parameter to setState() is an optional callback function
-		//* that will be executed once setState is completed
-		//* and the component is re-rendered."
-		// https://reactjs.org/docs/react-component.html#setstate
-
-		// console.log(`The index of the clicked tab is ${clickedTabIdx}`);
-	};
+		this.setState({
+			activeTabIdx: clickedTabIdx,
+		});
+	}; //handleTabClick
 
 	render() {
 		let allTabs = this.state.cocktails.map((cocktail, idx) => {
@@ -148,6 +143,7 @@ class App extends Component {
 				<Header />
 				<ul className="ul-tabs">{allTabs}</ul>
 				<div className="div-contents">{allContents}</div>
+				<Button btnCallback={this.handleBtnClick} />
 			</div>
 		);
 	} //render

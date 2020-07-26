@@ -1,0 +1,15 @@
+.btn-five-more {
+	font-weight: bold;
+	color: var(--white-russian);
+	background-color: var(--old-pal);
+	border-color: var(--porto-flip);
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 3px;
+	padding: 5px 20px;
+	margin-top: 10px;
+}
+
+button:hover {
+	filter: brightness(0.95);
+}
