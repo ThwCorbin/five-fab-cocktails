@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ecdb39ae2de04ac341cd09d1e9af83ee",
+    "revision": "aedfebcc3bad65f60649bae92dd97164",
     "url": "/five-fab-cocktails/index.html"
   },
   {
