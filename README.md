@@ -8,9 +8,9 @@ Repo: https://github.com/ThwCorbin/five-fab-cocktails
 
 ## Description
 
-The player selects a turtle from the top of a stack. Then the player selects the tower base to which they want to move the turtle. Larger turtles cannot move on top of smaller turtles. Keep moving turtles until all of the turtles are restacked on a different tower base than they all started on.
+The website presents a user five fab cocktails with tabs to select each one. User can click a button to load five more cocktails.
 
-![Tower of Turtles screenshot](/tower-of-turtles-corbin.png "title")
+![Five Fab Cocktails screenshot](./five-fab-screenshot.png "Five Fab Cocktails")
 
 This is a lab exercise that I converted into a project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
