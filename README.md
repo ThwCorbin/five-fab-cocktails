@@ -1,6 +1,6 @@
 # Five Fab Cocktails
 
-Cocktail anyone?
+Cocktail anyone? Here are five cocktails for you to try.
 
 Website: https://thwcorbin.github.io/five-fab-cocktails
 
@@ -12,25 +12,22 @@ The player selects a turtle from the top of a stack. Then the player selects the
 
 ![Tower of Turtles screenshot](/tower-of-turtles-corbin.png "title")
 
-This game is my fourth project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
+This is a lab exercise that I converted into a project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
 ## Technologies
 
+- React
 - JavaScript
 - HTML
 - CSS
 
-## Features
-
-I developed a bronze/silver/gold plan, which is available in the planning directory in this repo. I completed all bronze level and some silver level features. I still need to replace the colored element blocks with SVG turtles and make the game responsive on devices smaller than 768px and larger than 1200px. I designed the game based on an iPad's dimensions. I did not attempt any gold level features, and I do not plan to do so. I revised my plan on several occasions to provide a better end product for a user. I updated the planning documents as needed to aid understanding, but there are differences between these documents and the features in the current game.
-
 ## Installation
 
-- Clone the repo: https://github.com/ThwCorbin/tower
+- Clone the repo: https://github.com/ThwCorbin/five-fab-cocktails
 
 ## Usage
 
-- cd to the tower directory
+- cd to the five-fab-cocktails directory
 - open index.html in your browser(1)
 
 ## License
