@@ -90,7 +90,7 @@ class App extends Component {
 		// 	},
 		// 	() => this.getCocktails()
 		// ); //setState
-	};
+	}; //handleBtnClick
 
 	handleTabClick = (e) => {
 		//* Get the clicked tab's parent's childNodes
