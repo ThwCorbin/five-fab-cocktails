@@ -57,3 +57,10 @@
 	line-height: 1.25;
 	margin-bottom: 1em;
 }
+
+/* * @media less than 768px */
+@media all and (max-width: 767px) {
+	.div-contents {
+		width: 99%;
+	}
+}

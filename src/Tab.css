@@ -25,3 +25,16 @@
 	border: 2px solid var(--sour);
 	border-bottom: var(--white-russian);
 }
+
+/* * @media less than 768px */
+@media all and (max-width: 767px) {
+	.ul-tabs {
+		width: 99%;
+		font-size: 0.45em;
+		margin-top: 0.25em;
+	}
+
+	.li-cocktail-name {
+		width: 20%;
+	}
+}
