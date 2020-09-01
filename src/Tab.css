@@ -30,12 +30,19 @@
 @media all and (max-width: 767px) {
 	.ul-tabs {
 		width: 99%;
-		font-size: 0.45em;
+		font-size: 0.6em;
 		margin-top: 0.25em;
 	}
 
 	.li-cocktail-name {
 		width: 20%;
 		padding: 0.5em;
+	}
+}
+
+/* * @media less than 360px */
+@media all and (max-width: 359px) {
+	.ul-tabs {
+		font-size: 0.45em;
 	}
 }
