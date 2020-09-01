@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9efd47e4dfa34e531af6dbeb3ba25295",
+    "revision": "28fc7ba30287b232e228838af97e45d5",
     "url": "/five-fab-cocktails/index.html"
   },
   {
-    "revision": "43ec74ddc50ec3eee8b4",
-    "url": "/five-fab-cocktails/static/css/main.dddbc30f.chunk.css"
+    "revision": "24d50eb2a5397b5ebd6f",
+    "url": "/five-fab-cocktails/static/css/main.43530176.chunk.css"
   },
   {
     "revision": "7a66481856261766a4c7",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/five-fab-cocktails/static/js/2.ac42d179.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "43ec74ddc50ec3eee8b4",
-    "url": "/five-fab-cocktails/static/js/main.ec61745c.chunk.js"
+    "revision": "24d50eb2a5397b5ebd6f",
+    "url": "/five-fab-cocktails/static/js/main.b8b453fb.chunk.js"
   },
   {
     "revision": "f59a72a53a063e17c41e",

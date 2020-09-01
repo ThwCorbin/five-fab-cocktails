@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/five-fab-cocktails/static/css/main.dddbc30f.chunk.css",
-    "main.js": "/five-fab-cocktails/static/js/main.ec61745c.chunk.js",
-    "main.js.map": "/five-fab-cocktails/static/js/main.ec61745c.chunk.js.map",
+    "main.css": "/five-fab-cocktails/static/css/main.43530176.chunk.css",
+    "main.js": "/five-fab-cocktails/static/js/main.b8b453fb.chunk.js",
+    "main.js.map": "/five-fab-cocktails/static/js/main.b8b453fb.chunk.js.map",
     "runtime-main.js": "/five-fab-cocktails/static/js/runtime-main.e32f1af7.js",
     "runtime-main.js.map": "/five-fab-cocktails/static/js/runtime-main.e32f1af7.js.map",
     "static/js/2.ac42d179.chunk.js": "/five-fab-cocktails/static/js/2.ac42d179.chunk.js",
     "static/js/2.ac42d179.chunk.js.map": "/five-fab-cocktails/static/js/2.ac42d179.chunk.js.map",
     "index.html": "/five-fab-cocktails/index.html",
-    "precache-manifest.4774f297c9236364b00e4e1342abc46e.js": "/five-fab-cocktails/precache-manifest.4774f297c9236364b00e4e1342abc46e.js",
+    "precache-manifest.d83b810794ebeebf88ca75a6f6a96f9f.js": "/five-fab-cocktails/precache-manifest.d83b810794ebeebf88ca75a6f6a96f9f.js",
     "service-worker.js": "/five-fab-cocktails/service-worker.js",
-    "static/css/main.dddbc30f.chunk.css.map": "/five-fab-cocktails/static/css/main.dddbc30f.chunk.css.map",
+    "static/css/main.43530176.chunk.css.map": "/five-fab-cocktails/static/css/main.43530176.chunk.css.map",
     "static/js/2.ac42d179.chunk.js.LICENSE.txt": "/five-fab-cocktails/static/js/2.ac42d179.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e32f1af7.js",
     "static/js/2.ac42d179.chunk.js",
-    "static/css/main.dddbc30f.chunk.css",
-    "static/js/main.ec61745c.chunk.js"
+    "static/css/main.43530176.chunk.css",
+    "static/js/main.b8b453fb.chunk.js"
   ]
 }
