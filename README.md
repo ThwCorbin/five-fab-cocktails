@@ -27,7 +27,7 @@ This is a lab exercise that I converted into a project for [General Assembly's](
 
 ## Usage
 
-- cd to the five-fab-cocktails directory
+- `cd` to the five-fab-cocktails directory
 - open index.html in your browser(1)
 
 ## License
