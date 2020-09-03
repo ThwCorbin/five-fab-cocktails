@@ -10,7 +10,7 @@ Repo: https://github.com/ThwCorbin/five-fab-cocktails
 
 The website presents a user five fab cocktails with tabs to select each one. User can click a button to load five more cocktails.
 
-![Five Fab Cocktails screenshot](./five-fab-screenshot.png "Five Fab Cocktails")
+![Five Fab Cocktails screenshot](./five-fab.png "Five Fab Cocktails")
 
 This is a lab exercise that I converted into a project for [General Assembly's](https://generalassemb.ly/ "General Assembly homepage") Software Engineering Immersive program.
 
